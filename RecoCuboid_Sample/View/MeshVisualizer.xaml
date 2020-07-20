@@ -1,0 +1,16 @@
+﻿<Window x:Class="RecoCuboid_Sample.MeshVisualizer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:helix="clr-namespace:HelixToolkit.Wpf;assembly=HelixToolkit.Wpf"
+        xmlns:local="clr-namespace:RecoCuboid_Sample"
+        mc:Ignorable="d"
+        Title="MeshVisualizer" Height="450" Width="800">
+    <Grid>
+        <helix:HelixViewport3D x:Name="viewport" RenderOptions.EdgeMode="Unspecified" ShowViewCube="False" ZoomExtentsWhenLoaded="True" ShowFrameRate="True">
+            <helix:SunLight/>
+            <!--<helix:FileModelVisual3D x:Name="model1" Source="D:\Messe.stl" DefaultMaterial="{helix:Material Green, Opacity=1}"/>-->
+        </helix:HelixViewport3D>
+    </Grid>
+</Window>
